@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The July 25–27 weekend itinerary for Dubrow-Lamb-Johnson Rockawaycation 2026 in Neponsit and Rockaway."
+      content="The July 25–27 itinerary for the Cannizzaro-Dubrow-Johnson-Lamb Rockawaycation ’26 in Neponsit and Rockaway."
     />
     <meta name="theme-color" content="#073b4c" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Dubrow-Lamb-Johnson Rockawaycation 2026"
+      content="Cannizzaro-Dubrow-Johnson-Lamb Rockawaycation ’26"
     />
     <meta
       property="og:description"
       content="July 25–27: three days of beach time, bike rides, Coney Island, and good food."
     />
-    <title>Dubrow-Lamb-Johnson Rockawaycation 2026</title>
+    <title>Cannizzaro-Dubrow-Johnson-Lamb Rockawaycation ’26</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260706" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -65,8 +65,8 @@
       <div class="hero-content">
         <p class="eyebrow">July 25–27, 2026 · Neponsit, New York</p>
         <h1>
-          <span>Dubrow-Lamb-Johnson</span>
-          Rockawaycation 2026
+          <span>Cannizzaro-Dubrow-Johnson-Lamb</span>
+          Rockawaycation ’26
         </h1>
         <p class="hero-copy">
           A long weekend of salt air, sandy feet, bike rides, boardwalk treats,
@@ -103,6 +103,18 @@
         </article>
       </section>
 
+      <section class="host-thanks" aria-labelledby="host-thanks-title">
+        <span class="thanks-icon" aria-hidden="true">♥</span>
+        <div>
+          <p class="eyebrow">Our home by the water</p>
+          <h2 id="host-thanks-title">A heartfelt thank-you</h2>
+          <p>
+            A special thank-you to the Cannizzaro family for graciously opening
+            their home and hosting our Rockawaycation weekend.
+          </p>
+        </div>
+      </section>
+
       <section class="map-section" id="map">
         <div class="map-heading">
           <div>
@@ -110,16 +122,16 @@
             <h2>Our corner of<br />Rockaway</h2>
           </div>
           <p>
-            Beach headquarters on one side, big Brooklyn adventures on the
-            other—and a bridge between them.
+            Riis Park and Fort Tilden to the west, more boardwalk fun to the
+            east, and big Brooklyn adventures across the bridge.
           </p>
         </div>
 
         <figure class="map-figure">
           <div class="map-art">
             <img
-              src="assets/rockaway-map.webp"
-              alt="A playful illustrated map showing Fort Tilden, Jacob Riis Park, the Neponsit home base, the Marine Parkway Bridge, Coney Island attractions, and Adventurer’s Park."
+              src="assets/rockaway-map-v2.webp"
+              alt="A playful illustrated map showing Fort Tilden, Jacob Riis Park, the Neponsit home base, the Rockaway boardwalk with playgrounds and concessions, the Marine Parkway Bridge, Coney Island attractions, and Adventurer’s Park."
               width="1586"
               height="992"
               decoding="async"
@@ -128,20 +140,22 @@
             <span class="map-place map-place-bay" aria-hidden="true">Jamaica Bay</span>
             <span class="map-place map-place-ocean" aria-hidden="true">Atlantic Ocean</span>
 
-            <span class="map-marker marker-home" aria-hidden="true"><b>1</b></span>
-            <span class="map-marker marker-riis" aria-hidden="true"><b>2</b></span>
-            <span class="map-marker marker-tilden" aria-hidden="true"><b>3</b></span>
-            <span class="map-marker marker-aquarium" aria-hidden="true"><b>4</b></span>
-            <span class="map-marker marker-luna" aria-hidden="true"><b>5</b></span>
-            <span class="map-marker marker-adventurers" aria-hidden="true"><b>6</b></span>
+            <a class="map-marker marker-home" href="#landmark-home" aria-label="Map marker 1: Home base"><b aria-hidden="true">1</b></a>
+            <a class="map-marker marker-riis" href="#landmark-riis" aria-label="Map marker 2: Jacob Riis Park"><b aria-hidden="true">2</b></a>
+            <a class="map-marker marker-tilden" href="#landmark-tilden" aria-label="Map marker 3: Fort Tilden"><b aria-hidden="true">3</b></a>
+            <a class="map-marker marker-aquarium" href="#landmark-aquarium" aria-label="Map marker 4: New York Aquarium"><b aria-hidden="true">4</b></a>
+            <a class="map-marker marker-luna" href="#landmark-luna" aria-label="Map marker 5: Luna Park"><b aria-hidden="true">5</b></a>
+            <a class="map-marker marker-adventurers" href="#landmark-adventurers" aria-label="Map marker 6: Adventurer’s Park"><b aria-hidden="true">6</b></a>
+            <a class="map-marker marker-boardwalk" href="#landmark-boardwalk" aria-label="Map marker 7: Rockaway boardwalk, playgrounds, and concessions"><b aria-hidden="true">7</b></a>
           </div>
           <figcaption>
-            Delightfully exaggerated and definitely not to scale.
+            Tap a numbered marker for details. Delightfully exaggerated and
+            definitely not to scale.
           </figcaption>
         </figure>
 
         <ol class="map-legend" aria-label="Map landmarks">
-          <li class="home-landmark">
+          <li class="home-landmark" id="landmark-home">
             <span class="legend-number">1</span>
             <div>
               <small>Beach headquarters</small>
@@ -149,7 +163,7 @@
               <address>216 Beach 144th St · Neponsit</address>
             </div>
           </li>
-          <li>
+          <li id="landmark-riis">
             <span class="legend-number">2</span>
             <div>
               <small>Beach &amp; bathhouse</small>
@@ -157,7 +171,7 @@
               <p>Our neighbor to the west</p>
             </div>
           </li>
-          <li>
+          <li id="landmark-tilden">
             <span class="legend-number">3</span>
             <div>
               <small>Dunes, trails &amp; history</small>
@@ -165,7 +179,7 @@
               <p>Family bike-ride territory</p>
             </div>
           </li>
-          <li>
+          <li id="landmark-aquarium">
             <span class="legend-number">4</span>
             <div>
               <small>Sunday Track A</small>
@@ -173,7 +187,7 @@
               <p>Coney Island boardwalk</p>
             </div>
           </li>
-          <li>
+          <li id="landmark-luna">
             <span class="legend-number">5</span>
             <div>
               <small>Sunday Track A</small>
@@ -181,12 +195,20 @@
               <p>Rides at Coney Island</p>
             </div>
           </li>
-          <li>
+          <li id="landmark-adventurers">
             <span class="legend-number">6</span>
             <div>
               <small>Good for younger kids</small>
               <h3>Adventurer’s Park</h3>
               <p>Small rides &amp; games</p>
+            </div>
+          </li>
+          <li id="landmark-boardwalk">
+            <span class="legend-number">7</span>
+            <div>
+              <small>East of home base</small>
+              <h3>Rockaway boardwalk</h3>
+              <p>Playgrounds, concessions &amp; more beach</p>
             </div>
           </li>
         </ol>
@@ -215,7 +237,7 @@
                 <span class="packing-check" aria-hidden="true"></span>
                 <div>
                   <strong>Bike helmets</strong>
-                  <small>For the family rides</small>
+                  <small>Bring them if available for the family rides</small>
                 </div>
               </li>
               <li>
@@ -564,6 +586,7 @@
                   <li>Spectro</li>
                   <li>Rocco’s Pizza</li>
                   <li>Rockaway Beach Bakery</li>
+                  <li>Rippers</li>
                 </ul>
               </div>
               <div>
@@ -571,6 +594,8 @@
                 <ul>
                   <li>Margie’s</li>
                   <li>Adrienne’s</li>
+                  <li>Uma’s</li>
+                  <li>The Wharf</li>
                 </ul>
               </div>
             </div>
@@ -585,6 +610,22 @@
               </div>
             </div>
             <ul class="nearby-list">
+              <li>
+                <span>Rockaway Beach &amp; Boardwalk</span>
+                <small>Playgrounds, concessions &amp; ocean views</small>
+              </li>
+              <li>
+                <span>Riis Beach Co</span>
+                <small>Food, drinks, music &amp; boardwalk</small>
+              </li>
+              <li>
+                <span>Fort Tilden &amp; Battery Harris</span>
+                <small>Trails, history &amp; skyline views</small>
+              </li>
+              <li>
+                <span>Jamaica Bay Wildlife Refuge</span>
+                <small>Easy trails &amp; bird-watching</small>
+              </li>
               <li>
                 <span>New York Aquarium</span>
                 <small>Coney Island</small>

@@ -1,4 +1,4 @@
-# Dubrow-Lamb-Johnson Rockawaycation 2026
+# Cannizzaro-Dubrow-Johnson-Lamb Rockawaycation ’26
 
 A responsive, single-page itinerary and illustrated area map designed for GitHub Pages.
 
