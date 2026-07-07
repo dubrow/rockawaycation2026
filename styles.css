@@ -637,8 +637,6 @@ main {
 .marker-home {
   right: 17%;
   bottom: 36%;
-  color: var(--ink-deep);
-  background: var(--sun);
 }
 
 .marker-riis {
@@ -671,6 +669,11 @@ main {
   bottom: 14%;
 }
 
+.map-marker.is-active {
+  color: var(--ink-deep);
+  background: var(--sun);
+}
+
 .map-figure figcaption {
   margin-top: 14px;
   color: var(--muted);
@@ -700,7 +703,7 @@ main {
   scroll-margin-top: 24px;
 }
 
-.map-legend .home-landmark {
+.map-legend li.is-active {
   color: var(--white);
   background: var(--ocean);
   border-color: var(--ocean);
@@ -720,7 +723,7 @@ main {
   font-weight: 700;
 }
 
-.home-landmark .legend-number {
+.map-legend li.is-active .legend-number {
   color: var(--ink-deep);
   background: var(--sun);
 }
@@ -735,7 +738,7 @@ main {
   text-transform: uppercase;
 }
 
-.home-landmark small {
+.map-legend li.is-active small {
   color: var(--sun);
 }
 
@@ -747,7 +750,7 @@ main {
   line-height: 1.25;
 }
 
-.home-landmark h3 {
+.map-legend li.is-active h3 {
   color: var(--white);
 }
 
@@ -760,7 +763,8 @@ main {
   line-height: 1.45;
 }
 
-.home-landmark address {
+.map-legend li.is-active p,
+.map-legend li.is-active address {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -2294,7 +2298,7 @@ footer > a:last-child span {
   }
 
   .map-legend li,
-  .map-legend .home-landmark {
+  .map-legend li.is-active {
     min-height: auto;
     padding: 10px;
     color: #111;
@@ -2302,9 +2306,10 @@ footer > a:last-child span {
     border: 1px solid #bbb;
   }
 
-  .home-landmark h3,
-  .home-landmark small,
-  .home-landmark address {
+  .map-legend li.is-active h3,
+  .map-legend li.is-active small,
+  .map-legend li.is-active p,
+  .map-legend li.is-active address {
     color: #111;
   }
 
